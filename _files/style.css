@@ -1,0 +1,158 @@
+body{
+    background-color: rgb(221, 221, 221)
+}
+
+
+
+
+
+/* La barre du haut */
+.top_bar{
+    max-width: calc(100% - 81px);
+    width: 100%;
+    height: 50px;
+    margin-top: -8px;
+    margin-left: -8px;
+    padding: 7px;
+    padding-left: 90px;
+    background-color: rgb(110, 93, 223);
+}
+/* Le texte */
+.top_bar .titre{
+    font-size: xx-large;
+}
+/* l'image */
+.top_bar .theme{
+    width: 40px;
+    height: 40px;
+    margin-left: 90%;
+    margin-top: -37px;
+    padding: 3px;
+    border: solid 2px rgb(66, 31, 115);
+    border-radius: 7px;
+    background-color: rgb(131, 131, 255);
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.top_bar .theme img{
+    opacity: 0.7;
+    width: 40px;
+}
+.top_bar .theme img:hover{
+    transition: all 1s;
+    transform: rotate(360deg);
+}
+
+
+
+
+/* La barre sur le cote */
+.side_bar{
+    position: fixed;
+    width: 65px;
+    height: 100vh;
+    margin-left: -8px;
+    margin-top: -64px;
+    padding: 3px;
+    background-color: rgb(114, 129, 40);
+    border-right: solid 2px rgb(65, 71, 15);
+}
+.side_bar p{
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 20vh;
+    font-size: 50px;
+    color: rgb(9, 87, 8);
+    writing-mode: vertical-lr;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+/* Le document */
+.document{
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 5px;
+}
+
+/* presentation */
+.partie{
+    margin-bottom: 25px;
+    padding: 5px;
+    background-color: rgb(119, 191, 209);
+    border-radius: 10px;
+    border: solid 2px rgb(44, 77, 80);
+}
+.partie .titre{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    color: rgb(148, 2, 2);
+}
+.partie img{
+    width: 150px;
+}
+
+
+/* Le rouge */
+.red{
+    padding: 5px;
+    background-color: rgb(83, 7, 7);
+    color: red;
+    border: solid 2px red;
+    border-radius: 7px;
+}
+/* fin etape */
+.fin_etape{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+/* Grand titre */
+.grd_titre{
+    margin: 20px;
+    font-size: 30px;
+    color: brown;
+    text-decoration: underline;
+}
+
+
+
+/* Les cartes */
+/* Les alignements */
+.ligne{
+    display: flex;
+}
+
+/* Les cartes en elles memes */
+.carte{
+    width: calc(100% / 3 - 20px);
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: brown;
+    border-radius: 7px;
+    border: solid 2px red;
+}
+.carte .image{
+    border-bottom: solid 2px red;
+}
+.carte .image img{
+    width: 100%;
+}
+.carte .titre{
+    text-align: center;
+    color: blanchedalmond;
+}
+.carte .texte{
+    text-align: center;
+}

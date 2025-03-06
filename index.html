@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le rubik's facile</title>
+    <link rel="stylesheet" href="./_files/style.css">
+</head>
+<body>
+    <!-- La barre du haut -->
+    <div class="top_bar">
+        <div class="titre">
+            La résolution du Rubik's cube
+        </div>
+        <div onclick="bg_color()" class="theme">
+            <img src="./images/soleil.png" alt="O">
+        </div>
+    </div>
+    <!-- La barre sur le cote -->
+    <div class="side_bar">
+        <p>
+            navigation rapide
+        </p>
+    </div>
+    <!-- Le menu sur le cote -->
+    <div class="side_menu">
+
+    </div>
+    <!-- Le site -->
+    <div class="document">
+        <div class="partie">
+            <div id="presentation" class="titre">
+                A) Présentation
+            </div>
+            <p>
+                Cette methode est une version que j'ai simplifiée de la methode layer by layer.
+            </p>
+            <p>
+                Cette methode se divise en 7 parties distinctes: <br>
+                <ul>
+                    <li>
+                        La croix blanche
+                    </li>
+                    <li>
+                        La première couronne
+                    </li>
+                    <li>
+                        La deuxième couronne
+                    </li>
+                    <li>
+                        La croix jaune
+                    </li>
+                    <li>
+                        La face jaune
+                    </li>
+                    <li>
+                        Les coins de la dernière couronne
+                    </li>
+                    <li>
+                        Les arêtes de la dernière couronne
+                    </li>
+                </ul>
+            </p>
+            <div class="titre">
+                Petite présentation du Rubik's
+            </div>
+            <p>
+                Les noms des pieces :
+                <div class="ligne">
+                    <div class="carte">
+                        <div class="image">
+                            <img src="./images/etapes_cube/centres.png" alt="Les centres d'un cube">
+                        </div>
+                        <div class="titre">
+                            <p>
+                                Centres
+                            </p>
+                        </div>
+                        <div class="texte">
+                            <p>
+                                Les centres sont les pièces qui montrent la couleur de la face sur le rubik's cube fini.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <div class="image">
+                            <img src="./images/etapes_cube/aretes.png" alt="Les aretes d'un cube">
+                        </div>
+                        <div class="titre">
+                            <p>
+                                Arêtes
+                            </p>
+                        </div>
+                        <div class="texte">
+                            <p>
+                                Les arêtes d'un rubik's cube sont des pièces bicolores qui peuvent tourner sur deux axes.    
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <div class="image">
+                            <img src="./images/etapes_cube/coins.png" alt="Les coins d'un cube">
+                        </div>
+                        <div class="titre">
+                            <p>
+                                Coins
+                            </p>
+                        </div>
+                        <div class="texte">
+                            <p>
+                                Les coins d'un rubik's cube sont des pièces tricolores qui peuvent tourner sur trois axes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </p>
+            <p>
+                Il faut aussi savoir que les centres ne se deplacent pas et par conséquent la face rouge sera toujours opposée à la face orange, la bleue à la verte et la blanche à la jaune. <br>
+            </p>
+            <div class="red">
+                La face blanche doit toujours rester orientée vers le bas.
+            </div>
+        </div>
+        <div class="partie">
+            <div class="titre">
+                B) Les mouvements
+            </div>
+            <p>
+                Les mouvements sont la base des techniques ils sont à apprendre par coeur. <br>
+                La liste des mouvements ici à été réduite pour vous réduire le nombre à apprendre. <br>
+            </p>
+            <div class="cartes_mouvements">
+                <div class="ligne">
+                    <div class="carte">
+                        <div class="image">
+                            <img src="./images/mouvements cubes/Cube_R.png" alt="">
+                        </div>
+                        <div class="titre">
+                            <p>
+                                R
+                            </p>
+                        </div>
+                        <div class="texte">
+                            <p>
+                                Le mouvement R est un mouvement qui fait tourner la face de droite dans le sens horaire
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <div class="image">
+                            <img src="./images/mouvements cubes/Cube_F.png" alt="">
+                        </div>
+                        <div class="titre">
+                            <p>
+                                F
+                            </p>
+                        </div>
+                        <div class="texte">
+                            <p>
+                                Le mouvement F est un mouvement qui fait tourner la face de devant dans le sens horaire
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <div class="image">
+                            <img src="./images/mouvements cubes/Cube_U.png" alt="">
+                        </div>
+                        <div class="titre">
+                            <p>
+                                U
+                            </p>
+                        </div>
+                        <div class="texte">
+                            <p>
+                                Le mouvement U est un mouvement qui fait tourner la face du dessus dans le sens horaire
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ligne">
+                    <div class="carte">
+                        <div class="image">
+                            <img src="./images/mouvements cubes/Cube_L.png" alt="">
+                        </div>
+                        <div class="titre">
+                            <p>
+                                L
+                            </p>
+                        </div>
+                        <div class="texte">
+                            <p>
+                                Le mouvement L est un mouvement qui fait tourner la face de gauche dans le sens horaire
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <div class="image">
+                            <img src="./images/mouvements cubes/Cube_B.png" alt="">
+                        </div>
+                        <div class="titre">
+                            <p>
+                                B
+                            </p>
+                        </div>
+                        <div class="texte">
+                            <p>
+                                Le mouvement B est un mouvement qui fait tourner la face de derrière dans le sens horaire
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <div class="image">
+                            <img src="./images/mouvements cubes/Cube_D.png" alt="">
+                        </div>
+                        <div class="titre">
+                            <p>
+                                D
+                            </p>
+                        </div>
+                        <div class="texte">
+                            <p>
+                                Le mouvement D est un mouvement qui fait tourner la face du dessous dans le sens horaire
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Les mouvements ont plusieurs dérivés :
+                    <ul>
+                        <li>
+                            R :Les mouvements normaux
+                        </li>
+                        <li>
+                            R' : Les mouvements en ses inverse
+                        </li>
+                        <li>
+                            R2 : Les mouvements répétés 2 fois
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="grd_titre">
+            C) La résolution
+        </div>
+        <!-- la croix blanche -->
+        <div class="partie">
+            <div class="titre">
+                1) La croix blanche
+            </div>
+            La croix blanche est l'etape qui vous demandera le plus de reflexion car c'est celle qui posséde le moins de methodes. Vous en aurez au fur et a mesures des résolutions. <br><br>
+            Votre but est de réaliser une croix blanche comme celle-ci : <br>
+            <img src="./images/etapes_cube/croix_blanche.png" alt="La croix blanche"><br>
+            Commencez d'abord par en faire une croix blanche sans vous préocuper des autres couleurs. <br>
+            Une fois qu'elle est faite vous allez vous concentrer sur les arêtes qui sont dites "mal placées" c'est celles qui ont leur couleur (pas la blanche) sur un centre avec une couleur différente. <br>
+            Vous devez les placer devant vous avec la face blanche vers le bas et leur faire le mouvement F2 pour mettre la partie blanche de l'arête sur la face jaune. <br>
+            Répétez l'opération pour les arêtes sur la face blanche qui ne sont pas avec la bonne couleur. <br> <br>
+            Une fois qu'elles sont mises sur la face jaune vous pouvez tourner la face jaune avec le mouvement U ou U' pour aligner les arêtes blanches avec leur bonne couleur. <br>
+            Une fois qu'une arête est alignée avec sa couleur vous pouvez exécuter le mouvement F2 pour la remettre sur la face blanche. <br><br>
+            Une fois fini le cube doit ressembler à ceci sur tous les cotes adjacents à la face blanche (toujours vers le bas la face blanche).<br>
+            <div class="fin_etape">
+                Fin de l'étape : <br>
+                <img src="./images/etapes_cube/croix_blanche.png" alt="La croix blanche"><br>
+            </div>
+        </div>
+        <!-- La premiere couronne -->
+        <div class="partie">
+            <div class="titre">
+                2) La première couronne
+            </div>
+            <p>
+                On commence par repérer les coins blancs sur la face jaune. <br>
+                On en prend un et on va regarder les deux autres couleurs sur ce coin. <br>
+                On tourne la face jaune (U, U') pour placer le coin entre les faces des couleurs repérées précédement. <br>
+                On doit avoir quelque chose qui ressemble a ceci : <br>
+                <img src="./images/etapes_cube/1layer_coin-haut.png" alt="Le coin bien placé"> <br>
+                On execute alors la methode appelée ascenceur [R U R' U'] jusqu'à ce que le coin soit bien plcé et orienté. <br>
+                On itère le process autant de fois qu'il y a de coins blancs sur la face jaune. <br>
+            </p>
+            <p>
+                Si on a un coin au bon endroit mais avec la mauvaise orientation on réalise la methode ascenceur [R U R' U']. <br>
+                Comme ceci : <br>
+                <img src="./images/etapes_cube/1layer_coinplacepasoriente.png" alt="Le coin en question">
+            </p>
+            <p>
+                Un autre cas possible est qu'un coin soit placé à la place d'un autre coin. <br>
+                Nous devons le sortir, encore une fois avec la même methode [R U R' U'].
+            </p>
+            <div class="fin_etape">
+                A la fin de l'étape le cube soit ressembler à ceci : <br>
+                <img src="./images/etapes_cube/1e_couronne.png" alt="La première couronne est réalisée">
+            </div>
+        </div>
+        <!-- La deuxieme courone -->
+        <div class="partie">
+            <div class="titre">
+                3) La deuxième couronne
+            </div>
+            <p>
+                Le but ici est d'insérer les arêtes à leur position finale. <br>
+                Deux cas sont possibles : <br>
+                <ul>
+                    <li>
+                        L'arête à insérer doit aller à droite vers position finale. <br>
+                        <img src="./images/etapes_cube/2layer_droite.png" alt="L'arête est a droite"> <br>
+                    </li>
+                    <li>
+                        L'arête à insérer doit aller à gauche vers position finale. <br>
+                        <img src="./images/etapes_cube/2layer_gauche.png" alt="L'arête est a gauche">
+                    </li>
+                </ul>
+            </p>
+            <p>
+                dans les deux cas vous devez former un T avec l'arête a placer comme ceci : <br>
+                <img src="./images/etapes_cube/placement_2e_couronne.png" alt="Arete placée en T"> <br>
+                Je vous propose soit l'histoire du belge un peu dure a comprendre ou la methode en dur <br><br>
+                L'histoire du belge et elle sert dans les deux cas. <br>
+                Le belge est l'arête à placer (Ce belge est pas malin).<br>
+                <ol>
+                    <li>
+                        Le belge part du cote inverse duquel il doit aller. [U ou U'] (selon les cas)
+                    </li>
+                    <li>
+                        ses amis viennent le chercher [R ou L'] (selon les cas) mais on doit faire bouger l'emplacement final de l'arête.
+                    </li>
+                    <li>
+                        Le belge revien voir ses amis [U ou U'] (l'inverse du 1er mouvement).
+                    </li>
+                    <li>
+                        Ses amis reviennent sur leurs pas [R' ou L] (l'inverse du 2e mouvement)
+                    </li>
+                    <li>
+                        Le belge et ses amis se trompent de chemin [U ou U'] (le même mouvement que le 3e mouvement)
+                    </li>
+                    <li>
+                        D'autres amis viennent les cherche [F'] si les amis doivent aller sur la droite du cube. sinon [F]
+                    </li>
+                    <li>
+                        Le belge et ses amis retrouvent leurs autres amis [U ou U'] le même que le 1er mouvement.
+                    </li>
+                    <li>
+                        Ils se retrouvent à leur place finale [F ou F'] pour remettre la face blanche.
+                    </li>
+                </ol>
+            </p>
+            <p>
+                Les methodes brutes de base <br>
+                <ul>
+                    <li>
+                        Si l'arête doit aller a droite [U R U' R' U' F' U F]
+                    </li>
+                    <li>
+                        Si l'arête doit aller a gauche [U' L' U L U F U' F']
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Si par malheur une arête se trouve a la bonne place mais qu'elle est retournée ou alors que la 2eme couronne n'est pas terminée et qu'il ne reste plus aucune arête a placer sur la face jaune.<br>
+                Soit pour enlever l'arête retournée soit pour sortir une arête qui n'est pas a sa place. <br>
+                Nous allons placer une arête jaune a la place d'une arête (mal mise ou à la mauvaise place). <br>
+                En suivant la même methode de placement d'arrête qu'au dessus.
+            </p>
+            <div class="fin_etape">
+                A la fin de l'étape le cube doit ressembler à ceci : <br>
+                <img src="./images/etapes_cube/2e_couronne.png" alt="la deuxième couronne est terminée">
+            </div>
+        </div>
+        <!-- La croix jaune -->
+        <div class="partie">
+            <div class="titre">
+                4)La croix jaune
+            </div>
+            A partir d'ici la methode est moins brouillon et plus facile a comprendre. <br>
+            Nous avons trois cas de figure possibles : <br>
+            <ul>
+                <li>
+                    Soit nous avons un point (seul le centre est jaune sur la croix jaune)
+                </li>
+                <li>
+                    Soit nous avons une virgule que nous placerons comme une virgule.
+                </li>
+                <li>
+                    Soit nous avons une barre que nous placerons horizontalement.
+                </li>
+            </ul>
+            <p>
+                dans tous les cas la methode est la même. Il faudra juste la réitérer. <br>
+                La methode est [F R U R' U' F']
+            </p>
+            <div class="fin_etape">
+                A la fin de l'étape le cube doit ressembler à ceci : <br>
+                <img src="./images/etapes_cube/croix_jaune.png" alt="la croix jaune est résolue">
+            </div>
+        </div>
+        <!-- La face jaune -->
+        <div class="partie">
+            <div class="titre">
+                5) La face jaune
+            </div>
+            
+        </div>
+    </div>
+    <!-- La barre du bas -->
+    <div class="bottom_bar">
+
+    </div>
+    <!-- le javascript -->
+    <script src="./_files/script.js"></script>
+</body>
+</html>
