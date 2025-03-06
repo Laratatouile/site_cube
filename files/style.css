@@ -51,6 +51,7 @@ body{
 
 /* La barre sur le cote */
 .side_bar{
+    z-index: 1;
     position: fixed;
     width: 65px;
     height: 100vh;
@@ -73,7 +74,71 @@ body{
     -ms-user-select: none;
     user-select: none;
 }
+.side_bar:hover ~ .side_menu{
+    margin-left: -8px;
+}
 
+
+/* La navigation rapide */
+.side_menu{
+    z-index: 2;
+    transition: all 1s;
+    height: 100vh;
+    width: 250px;
+    margin-top: -64px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -300px;
+    position: fixed;
+    border-right: solid 2px rgb(46, 79, 15);
+    background-color: rgb(108, 141, 25);
+}
+.side_menu:hover{
+    margin-left: -8px;
+}
+.side_menu .somm0{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: rgb(60, 79, 27);
+    text-decoration: underline;
+}
+.side_menu .somm_1 .somm_titre{
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: rgb(60, 79, 27);
+    text-decoration: underline;
+    display: flex;
+}
+.side_menu .somm_1 .somm_titre a{
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: rgb(60, 79, 27);
+    text-decoration: underline;
+    display: flex;
+}
+.side_menu .somm_1 .somm_titre img{
+    transition: all 0.25s;
+    max-width: 25px;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.side_menu .somm_1 .somm_1_1{
+    display: none;
+}
+.side_menu .somm_1 .somm_1_2{
+    display: none;
+}
+.side_menu .somm_1 .somm_1_1 p a{
+    color: black;
+    text-decoration: none;
+}
+.side_menu .somm_1 .somm_1_2 p a{
+    color: black;
+    text-decoration: none;
+}
 
 
 /* Le document */
@@ -147,12 +212,32 @@ body{
     border-bottom: solid 2px red;
 }
 .carte .image img{
+    max-width: 150px;
     width: 100%;
 }
 .carte .titre{
     text-align: center;
+    text-decoration: none;
     color: blanchedalmond;
 }
 .carte .texte{
     text-align: center;
+}
+
+
+
+/* La barre du bas */
+.bottom_bar{
+    max-width: calc(100% - 85px);
+    width: 100%;
+    height: 30px;
+    margin-bottom: -4px;
+    padding: 3px;
+    padding-top: 10px;
+    padding-left: 90px;
+    background-color: rgb(110, 93, 223);
+    display: flex;
+}
+.bottom_bar .droite{
+    margin-left: calc(100% - 350px);
 }

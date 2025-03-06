@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- La barre du haut -->
-    <div class="top_bar">
+    <div id="top_bar" class="top_bar">
         <div class="titre">
             La résolution du Rubik's cube
         </div>
@@ -23,11 +23,44 @@
         </p>
     </div>
     <!-- Le menu sur le cote -->
-    <div class="side_menu">
-
+    <div id="side_menu" class="side_menu">
+        <div class="somm0">
+            Sommaire :
+        </div>
+        <div class="somm_1">
+            <div class="somm_titre">
+                I) Présentation
+                <img id="somm_fleche_1" onclick="somm_ouv_I()" src="./images/fleche.png" alt=">">
+            </div>
+            <div id="somm_1_1" class="somm_1_1">
+                <p><a href="#A">Pièces</a></p>
+                <p><a href="#B">mouvements</a></p>
+            </div>
+        </div>
+        <div class="somm_1">
+            <div class="somm_titre">
+                II) Résolution
+                <img id="somm_fleche_2" onclick="somm_ouv_II()" src="./images/fleche.png" alt=">">
+            </div>
+            <div id="somm_1_2" class="somm_1_2">
+                <p><a href="#croix_blanche">La croix blanche</a></p>
+                <p><a href="#face_blanche">La face blanche</a></p>
+                <p><a href="#2ec">La deuxième couronne</a></p>
+                <p><a href="#croix_jaune">La croix jaune</a></p>
+                <p><a href="#face_jaune">La face jaune</a></p>
+                <p><a href="#3ec_c">Les coins de la drnière couronne</a></p>
+                <p><a href="#3ec_a">Les arêtes de la dernière couronne</a></p>
+            </div>
+        </div>
+        <div class="somm_1">
+            <div class="somm_titre">
+                <a href="#methode_rapide">III) methode rapide</a>
+            </div>
+        </div>
     </div>
     <!-- Le site -->
-    <div class="document">
+    <div id="document" class="document">
+        <!-- Presentation -->
         <div class="partie">
             <div id="presentation" class="titre">
                 A) Présentation
@@ -61,7 +94,7 @@
                     </li>
                 </ul>
             </p>
-            <div class="titre">
+            <div id="A" class="titre">
                 Petite présentation du Rubik's
             </div>
             <p>
@@ -121,7 +154,8 @@
                 La face blanche doit toujours rester orientée vers le bas.
             </div>
         </div>
-        <div class="partie">
+        <!-- Les mouvements -->
+        <div id="B" class="partie">
             <div class="titre">
                 B) Les mouvements
             </div>
@@ -241,7 +275,7 @@
             </div>
         </div>
         <div class="grd_titre">
-            C) La résolution
+            La résolution
         </div>
         <!-- la croix blanche -->
         <div class="partie">
@@ -397,12 +431,146 @@
             <div class="titre">
                 5) La face jaune
             </div>
-            
+            <p>
+                La face jaune possède aussi une seule methode à réitérer. <br>
+                Il faudra aussi se replacer à chaque fois qu'on itère la methode. <br>
+                La methode est la suivante : [R U R' U R U2 R'].
+            </p>
+            <p>
+                Vous pouvez avoir différentes configurations sur votre cube : <br>
+            </p>
+            <p>
+                1) Si vous n'avez pas de coins jaunes sur la face <br>
+                Placez le cube comme ca <br>
+                <img src="./images/etapes_cube/face-jaune_rien.png" alt="pas de coins">
+            </p>
+            <p>
+                2) Si vous avez 1 coin jaune: <br>
+                Placez le cube comme ca <br>
+                <img src="./images/etapes_cube/face-jaune_1.png" alt="Le coin est en bas a gauche">
+            </p>
+            <p>
+                3) Si vous avez 2 coins jaunes en diagonale : <br>
+                Placez les comme ca <br>
+                <img src="./images/etapes_cube/face-jaune_2diag.png" alt="Les coins sont en diagonale du haut gauche vers le bas droit">
+            </p>
+            <p>
+                4) Si vous avez deux coins cote à cote : <br>
+                Placez les comme ca <br>
+                <img src="./images/etapes_cube/face-jaune_2inv.png" alt="Les coins sont a droite">
+            </p>
+            <div class="fin_etape">
+                A la fin de l'étape le cube doit ressembler à ceci : <br>
+                <img src="./images/etapes_cube/face_jaune.png" alt="La face jaune est entière">
+            </div>
+        </div>
+        <div class="partie">
+            <div class="titre">
+                6) Les coins de la troième couronne
+            </div>
+            <p>
+                Pour résoudre les coins de la dernière courone vous allez devoir essayer de créer un plastron comme ceci sur une face (pas la jaune ni la blanche):
+                <img src="" alt="">
+            </p>
+            <p>
+                Si vous y êtes arrivés placez les à l'arrière du cube sinon ne vous en préocuez pas vous devrez simplement l'executer une deuxieme fois après l'avoir replacé <br>
+                La methode est [R' F R' B2 R F' R' B2 R2]. <br>
+            </p>
+            <div class="fin_etape">
+                A la fin de l'etape le cube doit ressembler a ceci : <br>
+                <img src="./images/etapes_cube/coins_fin.png" alt="Touts les coins de la 3e couronne sont placés">
+            </div>
+        </div>
+        <div class="partie">
+            <div class="titre">
+                7) Les arêtes de la dernière couronne
+            </div>
+            <p>
+                Les arêtes de la dernière couronne se résolvent avec la methode de la fusée : <br>
+                On place déjà la face finie (pas la blanche ni la jaune) sur l'arrière du cube si il y en a une sinon on ne n'en préocupe pas.
+            </p>
+            <p>
+                On crée les réacteurs de la fusée [F2]
+            </p>
+            <p>
+                On crée le dessus de la fusée [U ou U'] attention ne pas faire [U2]
+            </p>
+            <p>
+                La fusée décole, les réacteurs tombent [R' L]
+            </p>
+            <p>
+                La fusée attérit sur la lune, elle se retourne [F2]
+            </p>
+            <p>
+                On met des nouveux réacteurs [R L']
+            </p>
+            <p>
+                Faites les 2 mouvements restants.
+            </p>
+            <p>
+                En résumé
+                <ul>
+                    <li>
+                        Vers la droite : [F2 U' R' L F2 R L' U F2]
+                    </li>
+                    <li>
+                        Vers la gauche : [F2 U R' L F2 R L' U' F2]
+                    </li>
+                </ul>
+            </p>
+            <div class="fin_etape">
+                A la fin de l'etape le cube doit être résolu. <br>
+                <img src="./images/etapes_cube/cube_fini.png" alt="Le cube est résolu">
+            </div>
+        </div>
+        <div id="methode_rapide" class="partie">
+            <div class="titre">
+                Methode rapide
+            </div>
+            <p>
+                La face blanche : L'ascenceur [R U R' U']
+            </p>
+            <p>
+                La deuxième couronne : <br>
+                <ul>
+                    <li>
+                        Vers la droite : [U R U' R' U' F' U F]
+                    </li>
+                    <li>
+                        Vers la gauche : [U' L' U L U F U' F']
+                    </li>
+                </ul>
+            </p>
+            <p>
+                La croix jaune : [F R U R' U' F']
+            </p>
+            <p>
+                La face jaune : [R U R' U R U2 R']
+            </p>
+            <p>
+                Les coins de la dernière courone : [R' F R' B2 R F' R' B2 R2]
+            </p>
+            <p>
+                Les arêtes de la dernière couronne : 
+                <ul>
+                    <li>
+                        Vers la droite : [U R U' R' U' F' U F]
+                    </li>
+                    <li>
+                        Vers la gauche : [U' L' U L U F U' F']
+                    </li>
+                </ul>
+            </p>
         </div>
     </div>
     <!-- La barre du bas -->
-    <div class="bottom_bar">
-
+    <div id="bottom_bar" class="bottom_bar">
+        <div class="gauche">
+            Le rubik's facile
+        </div>
+        <div class="droite">
+            Fait par mes soins et mon espérience
+        </div>
     </div>
     <!-- le javascript -->
     <script src="./files/script.js"></script>
