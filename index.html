@@ -102,7 +102,7 @@
                 <div class="ligne">
                     <div class="carte">
                         <div class="image">
-                            <img src="./images/etapes_cube/centres.png" alt="Les centres d'un cube">
+                            <img src="./images/piece/centres.png" alt="Les centres d'un cube">
                         </div>
                         <div class="titre">
                             <p>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="carte">
                         <div class="image">
-                            <img src="./images/etapes_cube/aretes.png" alt="Les aretes d'un cube">
+                            <img src="./images/piece/aretes.png" alt="Les aretes d'un cube">
                         </div>
                         <div class="titre">
                             <p>
@@ -132,7 +132,7 @@
                     </div>
                     <div class="carte">
                         <div class="image">
-                            <img src="./images/etapes_cube/coins.png" alt="Les coins d'un cube">
+                            <img src="./images/piece/coins.png" alt="Les coins d'un cube">
                         </div>
                         <div class="titre">
                             <p>
@@ -278,13 +278,13 @@
             La résolution
         </div>
         <!-- la croix blanche -->
-        <div class="partie">
+        <div id="croix_blanche" class="partie">
             <div class="titre">
                 1) La croix blanche
             </div>
             La croix blanche est l'etape qui vous demandera le plus de reflexion car c'est celle qui posséde le moins de methodes. Vous en aurez au fur et a mesures des résolutions. <br><br>
             Votre but est de réaliser une croix blanche comme celle-ci : <br>
-            <img src="./images/etapes_cube/croix_blanche.png" alt="La croix blanche"><br>
+            <img src="./images/fin_etape/croix_blanche.png" alt="La croix blanche"><br>
             Commencez d'abord par en faire une croix blanche sans vous préocuper des autres couleurs. <br>
             Une fois qu'elle est faite vous allez vous concentrer sur les arêtes qui sont dites "mal placées" c'est celles qui ont leur couleur (pas la blanche) sur un centre avec une couleur différente. <br>
             Vous devez les placer devant vous avec la face blanche vers le bas et leur faire le mouvement F2 pour mettre la partie blanche de l'arête sur la face jaune. <br>
@@ -294,11 +294,11 @@
             Une fois fini le cube doit ressembler à ceci sur tous les cotes adjacents à la face blanche (toujours vers le bas la face blanche).<br>
             <div class="fin_etape">
                 Fin de l'étape : <br>
-                <img src="./images/etapes_cube/croix_blanche.png" alt="La croix blanche"><br>
+                <img src="./images/fin_etape/croix_blanche.png" alt="La croix blanche"><br>
             </div>
         </div>
         <!-- La premiere couronne -->
-        <div class="partie">
+        <div id="face_blanche" class="partie">
             <div class="titre">
                 2) La première couronne
             </div>
@@ -322,11 +322,11 @@
             </p>
             <div class="fin_etape">
                 A la fin de l'étape le cube soit ressembler à ceci : <br>
-                <img src="./images/etapes_cube/1e_couronne.png" alt="La première couronne est réalisée">
+                <img src="./images/fin_etape/1e_couronne.png" alt="La première couronne est réalisée">
             </div>
         </div>
         <!-- La deuxieme courone -->
-        <div class="partie">
+        <div id="2ec" class="partie">
             <div class="titre">
                 3) La deuxième couronne
             </div>
@@ -396,11 +396,11 @@
             </p>
             <div class="fin_etape">
                 A la fin de l'étape le cube doit ressembler à ceci : <br>
-                <img src="./images/etapes_cube/2e_couronne.png" alt="la deuxième couronne est terminée">
+                <img src="./images/fin_etape/2e_couronne.png" alt="la deuxième couronne est terminée">
             </div>
         </div>
         <!-- La croix jaune -->
-        <div class="partie">
+        <div id="croix_jaune" class="partie">
             <div class="titre">
                 4)La croix jaune
             </div>
@@ -408,13 +408,16 @@
             Nous avons trois cas de figure possibles : <br>
             <ul>
                 <li>
-                    Soit nous avons un point (seul le centre est jaune sur la croix jaune)
+                    Soit nous avons un point (seul le centre est jaune sur la croix jaune) <br>
+                    <img src="./images/etapes_cube/croix-jaune_point.png" alt="Un point sur la face jaune">
                 </li>
                 <li>
-                    Soit nous avons une virgule que nous placerons comme une virgule.
+                    Soit nous avons une virgule que nous placerons comme une virgule. <br>
+                    <img src="./images/etapes_cube/croix-jaune_v.png" alt="Une virgule jaune sur la face jaune">
                 </li>
                 <li>
-                    Soit nous avons une barre que nous placerons horizontalement.
+                    Soit nous avons une barre que nous placerons horizontalement. <br>
+                    <img src="./images/etapes_cube/croix-jaune_bande.png" alt="Une barre horizontale sur la face jaune">
                 </li>
             </ul>
             <p>
@@ -423,11 +426,11 @@
             </p>
             <div class="fin_etape">
                 A la fin de l'étape le cube doit ressembler à ceci : <br>
-                <img src="./images/etapes_cube/croix_jaune.png" alt="la croix jaune est résolue">
+                <img src="./images/fin_etape/croix_jaune.png" alt="la croix jaune est résolue">
             </div>
         </div>
         <!-- La face jaune -->
-        <div class="partie">
+        <div id="face_jaune" class="partie">
             <div class="titre">
                 5) La face jaune
             </div>
@@ -457,20 +460,21 @@
             <p>
                 4) Si vous avez deux coins cote à cote : <br>
                 Placez les comme ca <br>
-                <img src="./images/etapes_cube/face-jaune_2inv.png" alt="Les coins sont a droite">
+                <img src="./images/etapes_cube/face-jaune_2.png" alt="Les coins sont a droite">
             </p>
             <div class="fin_etape">
                 A la fin de l'étape le cube doit ressembler à ceci : <br>
-                <img src="./images/etapes_cube/face_jaune.png" alt="La face jaune est entière">
+                <img src="./images/fin_etape/face_jaune.png" alt="La face jaune est entière">
             </div>
         </div>
-        <div class="partie">
+        <!-- troisieme couronne coins -->
+        <div id="3ec_c" class="partie">
             <div class="titre">
                 6) Les coins de la troième couronne
             </div>
             <p>
                 Pour résoudre les coins de la dernière courone vous allez devoir essayer de créer un plastron comme ceci sur une face (pas la jaune ni la blanche):
-                <img src="" alt="">
+                <img src="./images/etapes_cube/coins_arriere.png" alt="Les coins en derrière">
             </p>
             <p>
                 Si vous y êtes arrivés placez les à l'arrière du cube sinon ne vous en préocuez pas vous devrez simplement l'executer une deuxieme fois après l'avoir replacé <br>
@@ -478,10 +482,11 @@
             </p>
             <div class="fin_etape">
                 A la fin de l'etape le cube doit ressembler a ceci : <br>
-                <img src="./images/etapes_cube/coins_fin.png" alt="Touts les coins de la 3e couronne sont placés">
+                <img src="./images/fin_etape/coins_fin.png" alt="Touts les coins de la 3e couronne sont placés">
             </div>
         </div>
-        <div class="partie">
+        <!-- troisieme couronne arete -->
+        <div id="3ec_a" class="partie">
             <div class="titre">
                 7) Les arêtes de la dernière couronne
             </div>
@@ -520,9 +525,10 @@
             </p>
             <div class="fin_etape">
                 A la fin de l'etape le cube doit être résolu. <br>
-                <img src="./images/etapes_cube/cube_fini.png" alt="Le cube est résolu">
+                <img src="./images/fin_etape/cube_fini.png" alt="Le cube est résolu">
             </div>
         </div>
+        <!-- methode rapide -->
         <div id="methode_rapide" class="partie">
             <div class="titre">
                 Methode rapide
